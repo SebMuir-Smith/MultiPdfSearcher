@@ -47,7 +47,7 @@ namespace PdfParser2
                 // Open pdf safely
                 try
                 {
-                    using (PdfDocument pdf = new PdfDocument(fileName))
+                    using (PdfDocument pdf = new PdfDocument(filePath))
                     {
                         // For each page in pdf
                         for (int pageN = 0; pageN < pdf.PageCount; pageN++)
